@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <div id="abc">
+        Hello Student<br>
+        Welcome to SKNCOE<br>
+        <button type="button" onclick="load()">Submit</button>
+
+    </div>
+    <script>
+        function load() {
+            var req =new XMLHttpRequest()
+            req.onreadystatechange = function() {
+            if(this.readyState == 4  && this.status == 200 ) {
+                document.getElementById("abc").innerHTML=this.responseText
+             } 
+            }
+            req.open('GET','data.txt',true)
+            req.send()
+        }
+    </script>
+    </body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
