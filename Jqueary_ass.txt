@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Jquery Mobile App</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+        <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <section data-role="Page" id="Page1">
+            <header data-role="header">
+                <h1>Page1</h1>
+            </header>
+                <div data-role="content">
+                    This is my content<br/>
+                    link to Page2,<a href="#Page2">click here</a>
+                </div>
+                <footer data-role="footer">
+                    <h1>This is footer</h1>
+                </footer>
+          
+        </section>
+        <section data-role="Page" id="Page2">
+            <header data-role="header">
+                <h1>Page2</h1>
+            </header>
+                <div data-role="content">
+                    This is another content
+                </div>
+           
+        </section>
+    </body>
+</html>
